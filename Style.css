@@ -1,0 +1,134 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#srch{
+    margin-left: 10px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(238, 221, 221, 0.881);
+    
+}
+
+
+.rw{
+display: flex;
+flex-direction: column;
+border: 5px solid rgb(249, 246, 246);
+align-items: center;
+width: 850px;
+height: 100%;
+padding-bottom: 20px;
+margin-top: 15px;
+}
+
+
+#header{
+    margin-top: 10px;
+    font-size:30px;
+    color: black;
+    text-decoration: underline;
+}
+
+.form{
+    padding-top: 15px;
+    width: 300px;
+    text-align: center;
+    margin: 50px;
+    border-radius: 0px 0px 32px 32px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+:root{
+    --background-bg-color:rgb(255, 255, 255);
+}
+body{
+
+    background-color: var(--radio-color);
+}
+
+
+
+
+.color-changer{
+
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    width: fit-content;
+    margin-inline: auto;
+    /* border: 0; */
+    /* background-color: white; */
+}
+
+input[type = "radio"]{
+    appearance: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid black;
+    border-radius: 50%;
+
+}
+
+input[type = "radio"]:checked{
+    background-color: var(--radio-color);
+}
+
+:root:has(#grey:checked)
+{
+    --radio-color : grey;
+}
+
+:root:has(#lightpink:checked)
+{
+    --radio-color : pink;
+
+
+}
+:root:has(#blue:checked)
+{
+    --radio-color : rgb(157, 157, 210);
+}
+
+:root:has(#green:checked)
+{
+    --radio-color : rgb(86, 170, 86);
+
+}
+
+:root:has(#black:checked)
+{
+
+    --radio-color : rgb(33, 29, 29);
+
+}
+.bracket
+{
+
+
+    padding: 15px;
+    width: 800px;
+    height: 250px;
+    border: 2px solid wheat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-left: 220px;
+
+}
